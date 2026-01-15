@@ -21,8 +21,7 @@ export default {
           'linear-gradient(135deg, #EBD197 0%, #C6A355 50%, #8E702D 100%)',
       },
       fontFamily: {
-        sans: ['Inter', 'sans-serif'], // Podemos definir uma fonte melhor depois
-        serif: ['Playfair Display', 'serif'], // Para títulos de luxo
+        sans: ['Montserrat', 'sans-serif'], // Podemos definir uma fonte melhor depois
       },
     },
   },
