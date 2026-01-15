@@ -1,0 +1,63 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* --- CONFIGURAÇÃO DAS FONTES (Montserrat) --- */
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  src: url('./assets/fonts/Montserrat-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* --- ESTILOS GLOBAIS --- */
+@layer base {
+  html {
+    scroll-behavior: smooth; /* Para o scroll suave ao clicar no menu */
+  }
+
+  body {
+    /* Aplica o fundo preto e texto claro como padrão */
+    @apply bg-hkn-black font-sans text-white antialiased;
+    /* Evita scroll horizontal indesejado em mobile */
+    @apply overflow-x-hidden;
+  }
+
+  /* Estilização da barra de rolagem para ficar dark/luxo */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    @apply bg-hkn-black;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply rounded-full bg-hkn-card;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-hkn-gold;
+  }
+}
+@layer utilities {
+  /* Classe para texto com gradiente dourado */
+  .text-gold-gradient {
+    @apply bg-gold-gradient bg-clip-text text-transparent;
+  }
+}
