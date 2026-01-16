@@ -45,7 +45,7 @@ Como Designer e Desenvolvedor, projetei a interface pensando na jornada do clien
 git clone [https://github.com/Bryanninja/hkn-projetos.git](https://github.com/Bryanninja/hkn-projetos.git)
 
 # Entre na pasta
-cd hkn-projetos
+cd hkn-engenharia
 
 # Instale as dependências
 npm install
