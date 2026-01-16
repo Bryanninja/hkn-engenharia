@@ -26,7 +26,6 @@ O desenvolvimento focou em performance (SEO) e em uma interface limpa, transmiti
 
 * **Front-end:** React.js (Vite)
 * **Estilização:** Tailwind CSS (Design System customizado)
-* **Ícones:** Lucide React / FontAwesome
 * **Deploy:** Vercel
 
 ## 🎨 Design e UI/UX
