@@ -41,7 +41,7 @@ Como Designer e Desenvolvedor, projetei a interface pensando na jornada do clien
 
 ```bash
 # Clone o repositório
-git clone [https://github.com/Bryanninja/hkn-projetos.git](https://github.com/Bryanninja/hkn-projetos.git)
+git clone [https://github.com/Bryanninja/hkn-engenharia.git](https://github.com/Bryanninja/hkn-projetos.git)
 
 # Entre na pasta
 cd hkn-engenharia
