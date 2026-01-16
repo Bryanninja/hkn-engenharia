@@ -7,7 +7,7 @@
 ![Preview da Landing Page]
 <img width="6000" height="4000" alt="mockup (1)" src="https://github.com/user-attachments/assets/05897424-b044-402c-ab25-a8aae97cf675" />
 
-*(Acesse o projeto online: [Link da Vercel Aqui])*
+*(Acesse o projeto online: https://www.figma.com/proto/5W5snW5nS94gLV003XkGfi/HKN---Landing-Page?page-id=0%3A1&node-id=85-450&viewport=-2388%2C187%2C0.97&t=WQxeaFOzQXx1epc8-1&scaling=scale-down-width&content-scaling=fixed)*
 
 ## 📄 Sobre o Projeto
 
@@ -34,7 +34,7 @@ O desenvolvimento focou em performance (SEO) e em uma interface limpa, transmiti
 
 Como Designer e Desenvolvedor, projetei a interface pensando na jornada do cliente:
 1.  **Navegação Intuitiva:** Menu fixo para facilitar o acesso às seções.
-2.  **Identidade Visual:** Uso das cores da marca [Cor 1] e [Cor 2] para fortalecer o branding.
+2.  **Identidade Visual:** Uso das cores da marca #EBD197 e #C6A355 para fortalecer o branding.
 3.  **Tipografia:** Escolha de fontes modernas para leitura agradável.
 
 ---
