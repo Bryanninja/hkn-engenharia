@@ -1,6 +1,6 @@
-# 🏗️ HKN Projetos
+# 🏗️ HKN Projetos - Engenharia & BIM
 
-![Status](https://img.shields.io/badge/Status-Concluído-brightgreen) ![Tech](https://img.shields.io/badge/Stack-React_%7C_Tailwind-blue)
+![React](https://img.shields.io/badge/React-blue) ![SEO](https://img.shields.io/badge/Performance-SEO_Optimized-green)
 
 > **Soluções profissionais e inovadoras para Engenharia Civil.**
 
@@ -10,7 +10,8 @@
 
 ## 📄 Sobre o Projeto
 
-Este projeto é uma **Landing Page de Alta Conversão** desenvolvida para a **HKN Projetos**. O objetivo principal foi criar uma presença digital sólida para a marca, apresentando seus serviços de forma clara e facilitando o contato com novos clientes.
+Este projeto vai além de uma Landing Page estática. Ele foi estruturado como uma **Aplicação React (SPA)** pensando em escalabilidade, manutenibilidade e otimização para motores de busca (SEO).
+desenvolvida para a **HKN Projetos**. O objetivo principal foi criar uma presença digital sólida para a marca, apresentando seus serviços de forma clara e facilitando o contato com novos clientes.
 
 O desenvolvimento focou em performance (SEO) e em uma interface limpa, transmitindo credibilidade e profissionalismo.
 
@@ -21,6 +22,23 @@ O desenvolvimento focou em performance (SEO) e em uma interface limpa, transmiti
 * **⚡ Alta Performance:** Carregamento rápido otimizado para não perder leads.
 * **📞 Botões de Ação (CTA):** Links diretos para WhatsApp
 * **🖼️ Galeria de Projetos:** Seção visual para exibir o portfólio da empresa.
+
+## 🛠️ Engenharia por trás do Site
+
+Mesmo sendo um site institucional, o ambiente de desenvolvimento segue padrões rigorosos:
+
+* **Padronização de Código:** Configuração de **Husky** e **Commitlint** para manter o histórico do Git limpo e semântico desde o primeiro commit.
+* **Arquitetura de Componentes:** Componentização inteligente para facilitar futuras expansões (como a adição de uma área de clientes).
+* **Performance:** Otimização de imagens e carregamento de scripts para garantir pontuação alta no Lighthouse.
+
+## 🚀 Tecnologias
+
+* React.js
+* Vite
+* Tailwind CSS
+* Husky + Commitlint (Git Hooks)
+
+---
 
 ## 🛠️ Tecnologias Utilizadas
 
@@ -36,6 +54,11 @@ Como Designer e Desenvolvedor, projetei a interface pensando na jornada do clien
 3.  **Tipografia:** Escolha de fontes modernas para leitura agradável.
 
 ---
+
+
+<p align="center">
+  Desenvolvido por <a href="https://www.linkedin.com/in/alexbryannt/">Álex Bryan</a>
+</p>
 
 ### 🚀 Como rodar o projeto
 
