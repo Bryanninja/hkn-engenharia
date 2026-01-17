@@ -37,14 +37,7 @@ Mesmo sendo um site institucional, o ambiente de desenvolvimento segue padrões 
 * Vite
 * Tailwind CSS
 * Husky + Commitlint (Git Hooks)
-
----
-
-## 🛠️ Tecnologias Utilizadas
-
-* **Front-end:** React.js (Vite)
-* **Estilização:** Tailwind CSS (Design System customizado)
-* **Deploy:** Vercel
+* Deploy:** Vercel
 
 ## 🎨 Design e UI/UX
 
