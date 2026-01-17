@@ -37,7 +37,7 @@ Mesmo sendo um site institucional, o ambiente de desenvolvimento segue padrões 
 * Vite
 * Tailwind CSS
 * Husky + Commitlint (Git Hooks)
-* Deploy:** Vercel
+* Deploy: Vercel
 
 ## 🎨 Design e UI/UX
 
