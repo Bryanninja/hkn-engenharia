@@ -9,7 +9,7 @@ const Header = () => {
         src={Logo}
         alt="Logo HKN-Projetos de Engenharia"
       />
-      <nav className="hidden gap-8 text-sm text-gray-300 md:flex">
+      <nav className="hidden gap-20 text-sm text-gray-300 md:flex">
         <a href="#servicos" className="transition-colors hover:text-hkn-gold">
           Serviços
         </a>
