@@ -1,11 +1,11 @@
-import BgHeader from '../assets/images/Bg-Header.png';
 import Header from '../components/Header';
+import Hero from '../components/Hero';
 
 const HomePage = () => {
   return (
     <div>
       <Header />
-      <img className="bg-cover" src={BgHeader} alt="" />
+      <Hero />
     </div>
   );
 };
