@@ -10,7 +10,7 @@ const button = tv({
       primary:
         'bg-gold-gradient text-hkn-black hover:brightness-110 shadow-lg shadow-hkn-gold/20',
       outline:
-        'border border-hkn-white text-hkn-white hover: hover:border-hkn-gold hover:bg-hkn-goldTransparent',
+        'border border-hkn-white text-hkn-white hover: hover:border-hkn-gold hover:bg-hkn-goldTransparent/70',
       ghost: 'text-hkn-muted hover:text-hkn-gold hover:bg-hkn-surface',
     },
 
