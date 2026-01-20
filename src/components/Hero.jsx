@@ -1,9 +1,13 @@
+import { IoLocationSharp } from 'react-icons/io5';
+
 import HeroBg from '../assets/images/hero-bg.png';
+import Badge from './Badge';
 import Button from './Button';
 
 const Hero = () => {
   return (
     <section id="home" className="relative h-screen w-full overflow-hidden">
+      {/* 1. Imagem de Fundo */}
       <div className="absolute inset-0 h-full w-full">
         <img
           className="h-full w-full object-cover object-center"
@@ -12,10 +16,23 @@ const Hero = () => {
         />
       </div>
 
+      {/* 2. Gradientes */}
       <div className="absolute inset-0 bg-gradient-to-r from-hkn-black via-hkn-black/65 to-transparent"></div>
       <div className="absolute bottom-0 left-0 h-1 w-full bg-gold-gradient"></div>
+
+      <Badge className="absolute right-[10%] top-[35%]" variant="desktop">
+        <IoLocationSharp />
+        Especialista em Obras Residenciais e Comerciais
+      </Badge>
+
+      {/* 3. Conteúdo Principal */}
       <div className="container relative z-10 mx-auto flex h-full flex-col justify-center px-6 md:px-12 lg:px-20">
         <div className="max-w-2xl space-y-6">
+          <Badge variant="mobile">
+            <IoLocationSharp className="text-gray-300" />
+            Especialista em Obras
+          </Badge>
+
           <h1 className="text-4xl font-medium leading-tight text-hkn-white md:text-4xl lg:text-5xl">
             Sua obra segura <br />
             econômica e sem <br />

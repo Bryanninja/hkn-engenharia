@@ -26,6 +26,16 @@ export default {
       fontFamily: {
         sans: ['Montserrat', 'sans-serif'], // Podemos definir uma fonte melhor depois
       },
+
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translateY(0)' },
+          '50%': { transform: 'translateY(-8px)' }, // Sobe 10px suavemente
+        },
+      },
+      animation: {
+        float: 'float 6s ease-in-out infinite',
+      },
     },
   },
   plugins: [],
