@@ -33,7 +33,7 @@ const Hero = () => {
             Especialista em Obras
           </Badge>
 
-          <h1 className="text-4xl font-medium leading-tight text-hkn-white md:text-4xl lg:text-5xl">
+          <h1 className="text-3xl font-semibold leading-tight text-hkn-white md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight">
             Sua obra segura <br />
             econômica e sem <br />
             imprevistos.
