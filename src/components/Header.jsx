@@ -1,7 +1,11 @@
+import { RxHamburgerMenu } from 'react-icons/rx';
+
 import Logo from '../assets/images/LogoSvg.svg';
 import Button from './Button';
 
 const Header = () => {
+  const handleToggle = () => {};
+
   return (
     <div className="fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-hkn-black/90 px-10 py-2 backdrop-blur-md">
       <img
@@ -9,7 +13,7 @@ const Header = () => {
         src={Logo}
         alt="Logo HKN-Projetos de Engenharia"
       />
-      <nav className="hidden gap-20 text-sm text-gray-300 md:flex">
+      <nav className="hidden gap-10 text-sm text-gray-300 lg:flex xl:gap-20">
         <a href="#servicos" className="transition-colors hover:text-hkn-gold">
           Serviços
         </a>
@@ -27,7 +31,14 @@ const Header = () => {
         </a>
       </nav>
 
-      <Button variant="outline">Solicitar Orçamento no WhatsApp</Button>
+      <RxHamburgerMenu
+        onClick={handleToggle}
+        className="flex cursor-pointer text-3xl text-hkn-gold-light lg:hidden"
+      />
+
+      <Button className="hidden lg:flex" variant="outline">
+        Solicitar Orçamento no WhatsApp
+      </Button>
     </div>
   );
 };
