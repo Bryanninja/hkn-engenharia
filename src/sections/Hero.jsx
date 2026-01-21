@@ -1,8 +1,8 @@
 import { IoLocationSharp } from 'react-icons/io5';
 
 import HeroBg from '../assets/images/hero-bg.png';
-import Badge from './Badge';
-import Button from './Button';
+import Badge from '../components/Badge';
+import Button from '../components/Button';
 
 const Hero = () => {
   return (

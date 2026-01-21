@@ -1,0 +1,47 @@
+import Card1 from '../assets/images/imageCard1.png';
+import Card2 from '../assets/images/imageCard2.png';
+import Card3 from '../assets/images/imageCard3.png';
+import Card from '../components/Card';
+
+const WhySection = () => {
+  return (
+    <section className="relative overflow-hidden py-20">
+      <div className="relative z-10 mb-14 text-center">
+        <span className="text-xs font-semibold uppercase tracking-widest text-hkn-gold-light">
+          Diferenciais HKN
+        </span>
+        <h1 className="mt-4 text-center text-3xl font-semibold leading-tight md:text-4xl md:leading-tight lg:text-5xl lg:leading-tight">
+          Por que investir em um <br /> projeto integrado?
+        </h1>
+      </div>
+
+      <div className="pointer-events-none absolute -right-20 top-1/2 z-0 h-[600px] w-[1000px] -translate-y-1/2 rounded-full bg-hkn-white/5 blur-[120px]"></div>
+      {/* Grid de Cards */}
+      <div className="container relative z-10 mx-auto px-6 md:px-12 lg:px-20">
+        <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr,1.2fr,1fr] lg:gap-10 xl:gap-20">
+          <Card
+            title="Economia Real"
+            subtitle="Projetos otimizados evitam desperdício de material. Você compra apenas o necessário."
+            image={Card1}
+          />
+
+          <Card
+            className="lg:mt-24"
+            title="Tecnologia BIM"
+            subtitle="Antecipamos os problemas da obra no computador garantindo zero erros na execução."
+            image={Card2}
+          />
+
+          <Card
+            className="lg:mt-8"
+            title="Solução Completa"
+            subtitle="Do alvará ao acabamento. Você não precisa contratar 5 profissionais diferentes."
+            image={Card3}
+          />
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default WhySection;
