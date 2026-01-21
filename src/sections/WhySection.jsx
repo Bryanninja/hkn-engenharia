@@ -16,6 +16,10 @@ const WhySection = () => {
       </div>
 
       <div className="pointer-events-none absolute -right-20 top-1/2 z-0 h-[600px] w-[1000px] -translate-y-1/2 rounded-full bg-hkn-white/5 blur-[120px]"></div>
+      <div className="pointer-events-none absolute left-[50%] top-[20%] z-[1] -translate-x-1/2 bg-gradient-to-r from-[#181818] to-[#1f1f1f] bg-clip-text text-[16rem] font-semibold text-hkn-card/15 opacity-15">
+        Projetos
+      </div>
+
       {/* Grid de Cards */}
       <div className="container relative z-10 mx-auto px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr,1.2fr,1fr] lg:gap-10 xl:gap-20">
