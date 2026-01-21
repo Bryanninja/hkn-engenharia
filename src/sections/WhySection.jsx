@@ -15,8 +15,8 @@ const WhySection = () => {
         </h1>
       </div>
 
-      <div className="pointer-events-none absolute -right-20 top-1/2 z-0 h-[600px] w-[1000px] -translate-y-1/2 rounded-full bg-hkn-white/5 blur-[120px]"></div>
-      <div className="pointer-events-none absolute left-[50%] top-[20%] z-[1] -translate-x-1/2 bg-gradient-to-r from-[#181818] to-[#1f1f1f] bg-clip-text text-[16rem] font-semibold text-hkn-card/15 opacity-15">
+      <div className="pointer-events-none absolute -right-20 top-1/2 z-0 h-[600px] w-[700px] -translate-y-1/2 rounded-full bg-hkn-white/5 blur-[120px] xl:w-[1000px]"></div>
+      <div className="pointer-events-none absolute left-[50%] top-[20%] z-[1] hidden -translate-x-1/2 bg-gradient-to-r from-[#181818] to-[#1f1f1f] bg-clip-text text-[14rem] font-semibold text-hkn-card/15 opacity-15 lg:flex xl:text-[16rem]">
         Projetos
       </div>
 
