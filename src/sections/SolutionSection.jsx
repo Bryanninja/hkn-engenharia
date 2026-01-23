@@ -1,4 +1,4 @@
-import Ilustration from '../assets/images/Icons.svg';
+import Ilustration from '../assets/icons/Icons.svg';
 
 const SolutionSection = () => {
   return (
@@ -24,6 +24,8 @@ const SolutionSection = () => {
           alt="Ilustração de Casa e blocos de modo abstrato"
         />
       </div>
+
+      <div></div>
     </section>
   );
 };

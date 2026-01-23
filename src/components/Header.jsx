@@ -1,6 +1,6 @@
 import { RxHamburgerMenu } from 'react-icons/rx';
 
-import Logo from '../assets/images/LogoSvg.svg';
+import Logo from '../assets/icons/LogoSvg.svg';
 import Button from './Button';
 
 const Header = () => {
