@@ -6,6 +6,7 @@ export default {
       colors: {
         hkn: {
           white: '#FFFFFF',
+          gray: '#d1d5db',
           goldTransparent: '#1C1B18',
           black: '#090909', // Fundo Principal
           surface: '#1A1A1A', // Cards/Fundo Secundário
