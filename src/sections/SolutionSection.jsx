@@ -1,8 +1,16 @@
+import IconEngineer from '../assets/icons/IconEngineer.svg';
+import IconFolder from '../assets/icons/IconFolder.svg';
 import Ilustration from '../assets/icons/Icons.svg';
+import IconStructue from '../assets/icons/IconStructure.svg';
+import IconTech from '../assets/icons/IconTech.svg';
+import CardSolution from '../components/CardSolution';
 
 const SolutionSection = () => {
   return (
-    <section className="container mx-auto px-6 pb-0 md:px-12 lg:px-20 lg:py-20">
+    <section
+      id="servicos"
+      className="container mx-auto space-y-20 px-6 pb-0 md:px-12 lg:px-20 lg:py-20"
+    >
       <div className="flex flex-col items-center justify-items-start gap-14 lg:flex-row xl:gap-44">
         <div>
           <h3 className="mb-2 text-xl font-semibold text-hkn-gold-light md:text-3xl">
@@ -19,13 +27,34 @@ const SolutionSection = () => {
           </div>
         </div>
         <img
-          className="mt-20 hidden h-full w-40 animate-float blur-[2px] lg:flex xl:mt-0 xl:w-60"
+          className="mt-20 hidden h-full w-40 animate-float opacity-35 blur-[0.6px] lg:flex xl:mt-0 xl:w-60"
           src={Ilustration}
           alt="Ilustração de Casa e blocos de modo abstrato"
         />
       </div>
 
-      <div></div>
+      <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-5">
+        <CardSolution
+          title="Projetos Estruturais & BIM"
+          subtitle="Concreto Armado, Estrutura Metálica, Elétrico, Hidrossanitário e Climatização (HVAC). Tudo integrado em 3D."
+          icon={IconStructue}
+        />
+        <CardSolution
+          title="Legalização & Burocracia"
+          subtitle="Projetos para Prefeitura, Liberação de Alvará de Construção e Regularização de Imóveis.."
+          icon={IconFolder}
+        />
+        <CardSolution
+          title="Tecnologias Especiais"
+          subtitle="Projetos de Cabeamento Estruturado, Telecomunicações, CFTV (Monitoramento), Luminotécnico e Piscinas."
+          icon={IconTech}
+        />
+        <CardSolution
+          title="Consultoria de Obras"
+          subtitle="Acompanhamento técnico, visitas periódicas, laudos e vistorias para garantir a qualidade da execução."
+          icon={IconEngineer}
+        />
+      </div>
     </section>
   );
 };
