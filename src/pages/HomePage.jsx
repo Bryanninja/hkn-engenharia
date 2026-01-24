@@ -1,6 +1,7 @@
 import Header from '../components/Header';
 import Hero from '../sections/Hero';
 import SolutionSection from '../sections/SolutionSection';
+import WhoSection from '../sections/WhoSection';
 import WhySection from '../sections/WhySection';
 
 const HomePage = () => {
@@ -10,7 +11,8 @@ const HomePage = () => {
       <Hero />
       <WhySection />
       <SolutionSection />
-      <div className="p-52"></div>
+      <WhoSection />
+      <div className="bg-hkn-surface p-52"></div>
     </div>
   );
 };

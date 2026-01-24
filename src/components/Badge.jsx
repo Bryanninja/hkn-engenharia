@@ -5,7 +5,8 @@ const badge = tv({
 
   variants: {
     variant: {
-      desktop: 'hidden animate-float xl:flex xl:right-[15%] px-4 py-2',
+      desktop:
+        'hidden animate-float hover:animate-none hover:bg-hkn-surface xl:flex xl:right-[15%] px-4 py-2',
 
       mobile: 'px-3 py-1.5 xl:hidden text-gray-300',
     },
