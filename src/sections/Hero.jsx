@@ -3,6 +3,7 @@ import { IoLocationSharp } from 'react-icons/io5';
 import HeroBg from '../assets/images/hero-bg.png';
 import Badge from '../components/Badge';
 import Button from '../components/Button';
+import Divider from '../components/Divider';
 
 const Hero = () => {
   return (
@@ -18,7 +19,7 @@ const Hero = () => {
 
       {/* 2. Gradientes */}
       <div className="absolute inset-0 bg-gradient-to-r from-hkn-black via-hkn-black/65 to-transparent"></div>
-      <div className="absolute bottom-0 left-0 h-1 w-full bg-gold-gradient"></div>
+      <Divider className="absolute bottom-0 left-0 z-10" />
 
       <Badge className="absolute right-[10%] top-[35%]" variant="desktop">
         <IoLocationSharp />
