@@ -1,5 +1,6 @@
 import Header from '../components/Header';
 import Hero from '../sections/Hero';
+import Partners from '../sections/Partners';
 import Portfolio from '../sections/Portfolio';
 import SolutionSection from '../sections/SolutionSection';
 import Testimonials from '../sections/Testimonials';
@@ -16,6 +17,7 @@ const HomePage = () => {
       <WhoSection />
       <Portfolio />
       <Testimonials />
+      <Partners />
       <div className="p-52"></div>
     </div>
   );
