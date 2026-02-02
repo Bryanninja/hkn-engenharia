@@ -1,4 +1,5 @@
 import Header from '../components/Header';
+import Footer from '../sections/Footer';
 import Hero from '../sections/Hero';
 import Partners from '../sections/Partners';
 import Portfolio from '../sections/Portfolio';
@@ -20,6 +21,7 @@ const HomePage = () => {
       <Testimonials />
       <Partners />
       <PreFooter />
+      <Footer />
     </div>
   );
 };
