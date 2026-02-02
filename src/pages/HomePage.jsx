@@ -2,6 +2,7 @@ import Header from '../components/Header';
 import Hero from '../sections/Hero';
 import Partners from '../sections/Partners';
 import Portfolio from '../sections/Portfolio';
+import PreFooter from '../sections/PreFooter';
 import SolutionSection from '../sections/SolutionSection';
 import Testimonials from '../sections/Testimonials';
 import WhoSection from '../sections/WhoSection';
@@ -18,7 +19,7 @@ const HomePage = () => {
       <Portfolio />
       <Testimonials />
       <Partners />
-      <div className="p-52"></div>
+      <PreFooter />
     </div>
   );
 };
