@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { IoCloseOutline } from 'react-icons/io5';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
@@ -6,7 +6,26 @@ import Logo from '../assets/icons/LogoSvg.svg';
 import Button from './Button';
 
 const Header = () => {
+  const [isScrolled, setIsScrolled] = useState(false);
   const [isOpen, setIsOpen] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    // Adiciona o sensor quando o site carrega
+    window.addEventListener('scroll', handleScroll);
+
+    // Limpa o sensor quando sair da página (boa prática)
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
 
   const handleToggle = () => {
     setIsOpen(!isOpen);
@@ -18,7 +37,7 @@ const Header = () => {
 
   return (
     <header
-      className={`fixed left-0 top-0 z-50 flex w-full items-center justify-between bg-hkn-black/90 px-10 py-2 backdrop-blur-md transition-all duration-300 ${isOpen ? 'bg-transparent' : 'bg-hkn-black/90 backdrop-blur-md'} `}
+      className={`fixed left-0 top-0 z-50 flex w-full items-center justify-between px-6 py-4 transition-all duration-500 md:px-10 ${isScrolled ? 'bg-hkn-black/90 py-3 shadow-lg backdrop-blur-md' : 'bg-transparent py-6'} `}
     >
       <img
         className="md:12 z-50 h-10 w-auto md:h-12"
@@ -54,7 +73,7 @@ const Header = () => {
       </button>
 
       <Button className="hidden lg:block" variant="outline">
-        Solicitar Orçamento no WhatsApp
+        Solicitar Orçamento
       </Button>
 
       {/* menuMobile */}
