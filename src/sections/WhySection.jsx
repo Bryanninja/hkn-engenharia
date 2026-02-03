@@ -1,5 +1,4 @@
 import Card1 from '../assets/images/imageCard1.png';
-import Card2 from '../assets/images/imageCard2.png';
 import Card3 from '../assets/images/imageCard3.png';
 import Card from '../components/Card';
 
@@ -24,16 +23,26 @@ const WhySection = () => {
       <div className="container relative z-10 mx-auto px-6 md:px-12 lg:px-20">
         <div className="grid grid-cols-1 items-start gap-8 lg:grid-cols-[1fr,1.2fr,1fr] lg:gap-10 xl:gap-20">
           <Card
+            className="lg:mt-8"
             title="Economia Real"
             subtitle="Projetos otimizados evitam desperdício de material. Você compra apenas o necessário."
             image={Card1}
           />
 
           <Card
-            className="lg:mt-24"
             title="Tecnologia BIM"
             subtitle="Antecipamos os problemas da obra no computador garantindo zero erros na execução."
-            image={Card2}
+            video={
+              <iframe
+                className="h-full w-full rounded-md"
+                src="https://www.youtube.com/embed/cjstltuao9w"
+                title="Conheça um pouco do meu trabalho!"
+                frameBorder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                referrerPolicy="strict-origin-when-cross-origin"
+                allowFullScreen
+              ></iframe>
+            }
           />
 
           <Card
