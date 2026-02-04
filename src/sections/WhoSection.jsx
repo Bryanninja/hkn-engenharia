@@ -2,6 +2,7 @@ import Person from '../assets/images/hyagor-big.png';
 import LogoBackground from '../assets/images/LogoBackground.svg';
 import Button from '../components/Button';
 import Divider from '../components/Divider';
+import { getWhatsAppLink } from '../utils/whatsapp';
 
 const WhoSection = () => {
   return (
@@ -44,7 +45,15 @@ const WhoSection = () => {
               rigorosamente o planejado.
             </p>
             <div>
-              <Button size="full">Falar com Engenheiro</Button>
+              <a
+                href={getWhatsAppLink(
+                  'Olá! Vi o portfólio no site e gostei bastante do padrão. Gostaria de verificar disponibilidade para conversarmos sobre minha obra.'
+                )}
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Button size="full">Falar com Engenheiro</Button>
+              </a>
             </div>
           </div>
         </div>

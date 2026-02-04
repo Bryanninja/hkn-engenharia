@@ -4,6 +4,7 @@ import HeroBg from '../assets/images/hero-bg.png';
 import Badge from '../components/Badge';
 import Button from '../components/Button';
 import Divider from '../components/Divider';
+import { getWhatsAppLink } from '../utils/whatsapp';
 
 const Hero = () => {
   return (
@@ -56,7 +57,7 @@ const Hero = () => {
 
           <div className="flex flex-col gap-4 md:flex-row">
             {/* Botão de Orçamento */}
-            <a href="#" target="_blank" rel="noreferrer">
+            <a href={getWhatsAppLink()} target="_blank" rel="noreferrer">
               <Button size="lg">Solicitar Orçamento</Button>
             </a>
 

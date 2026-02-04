@@ -1,6 +1,7 @@
 import footerImg from '../assets/images/footerImg.png';
 import Button from '../components/Button';
 import Divider from '../components/Divider';
+import { getWhatsAppLink } from '../utils/whatsapp';
 
 const PreFooter = () => {
   return (
@@ -35,7 +36,15 @@ const PreFooter = () => {
             imóvel. Fale diretamente comigo.
           </p>
 
-          <Button size="lg">Solicitar orçamento do meu sonho!</Button>
+          <a
+            href={getWhatsAppLink(
+              'Olá! Vim pelo site e gostei bastante, gostaria de um orçamento. Como funciona?.'
+            )}
+            target="_blank"
+            rel="noreferrer"
+          >
+            <Button size="lg">Solicitar orçamento do meu sonho!</Button>
+          </a>
         </div>
       </div>
     </section>

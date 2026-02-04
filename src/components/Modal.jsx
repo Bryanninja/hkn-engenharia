@@ -8,6 +8,7 @@ import { Autoplay, Navigation, Pagination } from 'swiper/modules';
 // Imports do Swiper
 import { Swiper, SwiperSlide } from 'swiper/react';
 
+import { getWhatsAppLink } from '../utils/whatsapp';
 import Button from './Button';
 
 const Modal = ({ project, closeModal }) => {
@@ -82,7 +83,17 @@ const Modal = ({ project, closeModal }) => {
           </div>
 
           <div className="pt-2 md:pt-4">
-            <Button className="w-full md:w-auto">Quero um projeto assim</Button>
+            <a
+              href={getWhatsAppLink(
+                'Olá Hyagor, acessei seu site e tenho interesse nos serviços de engenharia. Poderia me passar uma estimativa para o meu caso?'
+              )}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button className="w-full md:w-auto">
+                Quero um projeto assim
+              </Button>
+            </a>
           </div>
         </div>
       </div>

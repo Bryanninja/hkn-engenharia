@@ -3,7 +3,8 @@ import { IoCloseOutline } from 'react-icons/io5';
 import { RxHamburgerMenu } from 'react-icons/rx';
 
 import Logo from '../assets/icons/LogoSvg.svg';
-import Button from './Button';
+import Button from '../components/Button';
+import { getWhatsAppLink } from '../utils/whatsapp';
 
 const Header = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -64,7 +65,7 @@ const Header = () => {
         </a>
       </nav>
 
-      {/* BOTÃO MOBILE */}
+      {/* BOTÃO MENU MOBILE */}
       <button
         onClick={handleToggle}
         className="relative z-50 flex text-3xl text-hkn-gold-light lg:hidden"
@@ -72,9 +73,11 @@ const Header = () => {
         {isOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
       </button>
 
-      <Button className="hidden lg:block" variant="outline">
-        Solicitar Orçamento
-      </Button>
+      <a href={getWhatsAppLink()} target="_blank" rel="noreferrer">
+        <Button className="hidden lg:block" variant="outline">
+          Solicitar Orçamento
+        </Button>
+      </a>
 
       {/* menuMobile */}
       <div
@@ -110,9 +113,11 @@ const Header = () => {
             Contato
           </a>
         </nav>
-        <Button onClick={handleClose} variant="outlineFill" className="mt-4">
-          Solicitar Orçamento
-        </Button>
+        <a href={getWhatsAppLink()} target="_blank" rel="noreferrer">
+          <Button onClick={handleClose} variant="outlineFill" className="mt-4">
+            Solicitar Orçamento
+          </Button>
+        </a>
       </div>
     </header>
   );
