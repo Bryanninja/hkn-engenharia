@@ -73,10 +73,13 @@ const Header = () => {
         {isOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}
       </button>
 
-      <a href={getWhatsAppLink()} target="_blank" rel="noreferrer">
-        <Button className="hidden lg:block" variant="outline">
-          Solicitar Orçamento
-        </Button>
+      <a
+        href={getWhatsAppLink()}
+        target="_blank"
+        rel="noreferrer"
+        className="hidden lg:block"
+      >
+        <Button variant="outline">Solicitar Orçamento</Button>
       </a>
 
       {/* menuMobile */}

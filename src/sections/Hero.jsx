@@ -58,7 +58,9 @@ const Hero = () => {
           <div className="flex flex-col gap-4 md:flex-row">
             {/* Botão de Orçamento */}
             <a href={getWhatsAppLink()} target="_blank" rel="noreferrer">
-              <Button size="lg">Solicitar Orçamento</Button>
+              <Button className="w-full md:w-auto" size="lg">
+                Solicitar Orçamento
+              </Button>
             </a>
 
             <a href="#portfolio" className="w-full md:w-auto">
