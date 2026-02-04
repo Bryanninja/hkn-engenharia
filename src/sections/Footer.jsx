@@ -1,5 +1,6 @@
 import { FaInstagram } from 'react-icons/fa';
 import { RiYoutubeLine } from 'react-icons/ri';
+import { Link } from 'react-router-dom';
 
 import Logo from '../assets/icons/LogoSvg.svg';
 
@@ -10,23 +11,25 @@ const Footer = () => {
         <div className="flex flex-col space-y-8">
           {/* PARTE DE CIMA: Logo e Links Legais */}
           <div className="flex flex-col items-center justify-between gap-6 md:flex-row">
-            <img src={Logo} alt="Logo HKN" className="w-32 md:w-auto" />
+            <Link to="/">
+              <img src={Logo} alt="Logo HKN" className="w-32 md:w-auto" />
+            </Link>
 
             <div className="flex flex-col items-center gap-4 text-sm text-hkn-muted md:flex-row md:gap-8">
               <p>© 2026 Todos os direitos reservados.</p>
               <div className="flex gap-6">
-                <a
-                  href="#"
+                <Link
+                  to="/termos-de-uso"
                   className="transition-colors duration-300 hover:text-hkn-gold"
                 >
                   Termos de uso
-                </a>
-                <a
-                  href="#"
+                </Link>
+                <Link
+                  to="/politica-de-privacidade"
                   className="transition-colors duration-300 hover:text-hkn-gold"
                 >
                   Política de privacidade
-                </a>
+                </Link>
               </div>
             </div>
           </div>
