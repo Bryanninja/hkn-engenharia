@@ -30,7 +30,7 @@ const TestimonialItem = ({ image, name, role, quote, isReversed = false }) => {
             <h2 className="text-2xl font-semibold text-white md:text-4xl lg:text-5xl">
               {name}
             </h2>
-            <p className="text-lg font-light text-hkn-gold md:text-xl">
+            <p className="text-pretty text-lg font-light text-hkn-gold md:text-xl">
               {role}
             </p>
           </div>

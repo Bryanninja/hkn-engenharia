@@ -35,7 +35,7 @@ const PreFooter = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={0.4}>
-            <p className="max-w-sm text-center text-sm text-gray-300 md:max-w-lg md:text-lg">
+            <p className="max-w-sm text-pretty text-center text-sm text-gray-300 md:max-w-lg md:text-lg">
               Evite dores de cabeça e garanta a melhor engenharia para o seu
               imóvel. Fale diretamente comigo.
             </p>
@@ -49,7 +49,9 @@ const PreFooter = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <Button size="lg">Solicitar orçamento do meu sonho!</Button>
+              <Button className="p-4" size="lg">
+                Solicitar orçamento do meu sonho!
+              </Button>
             </a>
           </ScrollReveal>
         </div>
