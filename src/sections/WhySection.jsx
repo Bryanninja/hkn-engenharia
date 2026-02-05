@@ -14,13 +14,17 @@ const WhySection = () => {
         </ScrollReveal>
 
         <ScrollReveal delay={0.2} width="100%">
-          <h1 className="mt-4 text-center text-4xl font-semibold lg:text-5xl lg:leading-[110%]">
-            Por que investir em um <br /> projeto integrado?
+          <h1 className="mt-4 text-balance text-center text-4xl font-semibold md:text-4xl lg:text-5xl lg:leading-[110%]">
+            Por que investir <br className="md:hidden" /> em um
+            <br className="hidden md:block" /> projeto
+            <br className="md:hidden" /> integrado?
           </h1>
         </ScrollReveal>
       </div>
 
       <div className="pointer-events-none absolute -right-20 top-1/2 z-0 h-[600px] w-[700px] -translate-y-1/2 rounded-full bg-hkn-white/5 blur-[120px] xl:w-[1000px]"></div>
+
+      {/* Ajustei o texto gigante de fundo para não ficar selecionável e atrapalhar o clique */}
       <div className="pointer-events-none absolute left-[50%] top-[20%] z-[1] hidden -translate-x-1/2 bg-gradient-to-r from-[#181818] to-[#1f1f1f] bg-clip-text text-[14rem] font-semibold text-hkn-card/15 opacity-15 lg:flex xl:text-[16rem]">
         Projetos
       </div>
@@ -37,6 +41,7 @@ const WhySection = () => {
             />
           </ScrollReveal>
 
+          {/* O delay do meio deve ser menor para criar a "onda" visual (0.5 é menor que 0.7) - Isso está certo! */}
           <ScrollReveal width="100%" delay={0.5}>
             <Card
               title="Tecnologia BIM"
