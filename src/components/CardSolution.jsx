@@ -18,7 +18,7 @@ const CardSolution = ({ icon, title, subtitle }) => {
       ></div>
 
       {/* === CAMADA 2: O CONTEÚDO === */}
-      <div className="relative z-10 flex h-full flex-col items-center justify-center space-y-6 rounded-2xl px-10 py-6 text-center xl:px-12 xl:py-10">
+      <div className="relative z-10 flex h-full flex-col items-center justify-center space-y-6 rounded-2xl px-4 py-6 text-center xl:px-12 xl:py-10">
         {/* Ícone */}
         <img
           className="h-32 w-32 object-contain transition-transform duration-500 group-hover:scale-110"
@@ -28,10 +28,10 @@ const CardSolution = ({ icon, title, subtitle }) => {
 
         {/* Textos */}
         <div className="space-y-2">
-          <h2 className="text-2xl font-semibold text-hkn-white transition-colors group-hover:text-hkn-gold-light">
+          <h2 className="text-balance text-2xl font-semibold text-hkn-white transition-colors group-hover:text-hkn-gold-light">
             {title}
           </h2>
-          <p className="mx-auto max-w-sm text-base text-hkn-muted transition-colors group-hover:text-hkn-gray">
+          <p className="mx-auto max-w-sm text-pretty text-base text-hkn-muted transition-colors group-hover:text-hkn-gray">
             {subtitle}
           </p>
         </div>

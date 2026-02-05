@@ -48,7 +48,7 @@ const Card = ({ title, subtitle, image, video, className }) => {
         </div>
 
         <div className="px-5 py-6">
-          <p className="text-sm leading-relaxed text-hkn-muted transition-colors group-hover:text-hkn-gray">
+          <p className="text-pretty text-sm leading-relaxed text-hkn-muted transition-colors group-hover:text-hkn-gray">
             {subtitle}
           </p>
         </div>
