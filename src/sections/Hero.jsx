@@ -47,15 +47,15 @@ const Hero = () => {
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <h1 className="text-4xl font-semibold text-hkn-white lg:text-5xl lg:leading-[110%]">
-              Sua obra segura, <br />
+            <h1 className="text-balance text-4xl font-semibold text-hkn-white lg:text-5xl lg:leading-[110%]">
+              Sua obra segura <br />
               econômica e sem <br />
               imprevistos.
             </h1>
           </ScrollReveal>
 
           <ScrollReveal delay={0.4}>
-            <p className="max-w-lg text-base text-gray-300 md:text-lg">
+            <p className="max-w-lg text-pretty text-base text-gray-300 md:text-lg">
               Projetos de engenharia completos e compatibilizados em BIM. Da
               documentação à entrega das chaves, garantimos a precisão que seu
               investimento exige.
