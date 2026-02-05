@@ -12,8 +12,8 @@ const WhoSection = () => {
         {/* 1. Cabeçalho */}
         <div className="relative z-10">
           <ScrollReveal>
-            <h2 className="text-4xl font-semibold text-hkn-white lg:text-5xl lg:leading-[110%]">
-              Quem cuida do seu <br /> patrimônio
+            <h2 className="text-balance text-4xl font-semibold text-hkn-white lg:text-5xl lg:leading-[110%]">
+              Quem cuida do seu <br className="hidden sm:block" /> patrimônio
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
@@ -46,7 +46,7 @@ const WhoSection = () => {
 
             {/* Card Desktop (Invisível no Mobile) */}
             <div className="absolute bottom-10 right-0 z-20 hidden max-w-lg animate-float rounded-2xl border border-hkn-gold/30 bg-hkn-surface/90 p-8 backdrop-blur-md xl:flex xl:flex-col xl:gap-6">
-              <p className="text-lg leading-relaxed text-gray-300">
+              <p className="text-pretty text-lg leading-relaxed text-gray-300">
                 Por trás da HKN, existe o compromisso técnico de quem entende
                 que uma obra não aceita erros. Especialista em compatibilização
                 de projetos e BIM, meu papel é garantir que a execução siga
@@ -75,7 +75,7 @@ const WhoSection = () => {
       <div className="container relative z-20 mx-auto px-6 md:px-12 lg:px-20">
         <ScrollReveal delay={0.2}>
           <div className="flex flex-col gap-6 rounded-2xl bg-transparent py-10 xl:hidden">
-            <p className="text-base leading-relaxed text-gray-300">
+            <p className="text-pretty text-base leading-relaxed text-gray-300">
               Por trás da HKN, existe o compromisso técnico de quem entende que
               uma obra não aceita erros. Especialista em compatibilização de
               projetos e BIM, meu papel é garantir que a execução siga
