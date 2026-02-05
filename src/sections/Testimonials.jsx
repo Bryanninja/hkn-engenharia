@@ -1,6 +1,7 @@
 import Ilustration from '../assets/icons/Icons.svg';
 import Customer1 from '../assets/images/Customer1.png';
 import Customer2 from '../assets/images/Customer2.png';
+import ScrollReveal from '../components/ScrollReveal';
 import TestimonialItem from '../components/TestimonialItem';
 
 const Testimonials = () => {
@@ -9,9 +10,11 @@ const Testimonials = () => {
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <div className="relative space-y-16 md:space-y-20">
           {/* Titulo */}
-          <h1 className="text-5xl font-semibold text-hkn-gold md:text-6xl lg:text-7xl">
-            Depoimentos
-          </h1>
+          <ScrollReveal width="100%">
+            <h1 className="text-center text-6xl font-semibold text-hkn-gold md:text-left md:text-6xl lg:text-7xl">
+              Depoimentos
+            </h1>
+          </ScrollReveal>
 
           {/* Ilustração Flutuante */}
           <div className="absolute right-0 top-0 -z-10">
@@ -23,21 +26,25 @@ const Testimonials = () => {
           </div>
 
           {/* Depoimento 1*/}
-          <TestimonialItem
-            image={Customer1}
-            name="Ricardo Gomes"
-            role="Proprietário Residencial"
-            quote="Eu achava que o projeto seria apenas mais um custo, mas a economia que tivemos na compra de materiais pagou o investimento. O detalhamento do Hyagor evitou desperdícios."
-          />
+          <ScrollReveal delay={0.2} width="100%">
+            <TestimonialItem
+              image={Customer1}
+              name="Ricardo Gomes"
+              role="Proprietário Residencial"
+              quote="Eu achava que o projeto seria apenas mais um custo, mas a economia que tivemos na compra de materiais pagou o investimento. O detalhamento do Hyagor evitou desperdícios."
+            />
+          </ScrollReveal>
 
           {/* Depoimento 2  */}
-          <TestimonialItem
-            image={Customer2}
-            name="Fernanda Lima"
-            role="Empresária"
-            quote="Precisávamos de agilidade na liberação do alvará e um projeto estrutural complexo. A HKN entregou tudo compatibilizado antes do prazo. É raro encontrar esse nível de precisão."
-            isReversed
-          />
+          <ScrollReveal delay={0.3} width="100%">
+            <TestimonialItem
+              image={Customer2}
+              name="Fernanda Lima"
+              role="Empresária"
+              quote="Precisávamos de agilidade na liberação do alvará e um projeto estrutural complexo. A HKN entregou tudo compatibilizado antes do prazo. É raro encontrar esse nível de precisão."
+              isReversed
+            />
+          </ScrollReveal>
         </div>
       </div>
     </section>

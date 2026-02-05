@@ -4,6 +4,7 @@ import HeroBg from '../assets/images/hero-bg.png';
 import Badge from '../components/Badge';
 import Button from '../components/Button';
 import Divider from '../components/Divider';
+import ScrollReveal from '../components/ScrollReveal';
 import { getWhatsAppLink } from '../utils/whatsapp';
 
 const Hero = () => {
@@ -38,37 +39,50 @@ const Hero = () => {
       {/* 3. Conteúdo Principal */}
       <div className="container relative z-20 mx-auto flex h-full flex-col justify-center px-6 md:px-12 lg:px-20">
         <div className="max-w-2xl space-y-6">
-          <Badge variant="mobile">
-            <IoLocationSharp className="text-gray-300" />
-            Especialista em Obras
-          </Badge>
+          <ScrollReveal>
+            <Badge variant="mobile">
+              <IoLocationSharp className="text-gray-300" />
+              Especialista em Obras
+            </Badge>
+          </ScrollReveal>
 
-          <h1 className="text-4xl font-semibold text-hkn-white lg:text-5xl lg:leading-[110%]">
-            Sua obra segura, <br />
-            econômica e sem <br />
-            imprevistos.
-          </h1>
+          <ScrollReveal delay={0.2}>
+            <h1 className="text-4xl font-semibold text-hkn-white lg:text-5xl lg:leading-[110%]">
+              Sua obra segura, <br />
+              econômica e sem <br />
+              imprevistos.
+            </h1>
+          </ScrollReveal>
 
-          <p className="max-w-lg text-base text-gray-300 md:text-lg">
-            Projetos de engenharia completos e compatibilizados em BIM. Da
-            documentação à entrega das chaves, garantimos a precisão que seu
-            investimento exige.
-          </p>
+          <ScrollReveal delay={0.4}>
+            <p className="max-w-lg text-base text-gray-300 md:text-lg">
+              Projetos de engenharia completos e compatibilizados em BIM. Da
+              documentação à entrega das chaves, garantimos a precisão que seu
+              investimento exige.
+            </p>
+          </ScrollReveal>
 
-          <div className="flex flex-col gap-4 md:flex-row">
-            {/* Botão de Orçamento */}
-            <a href={getWhatsAppLink()} target="_blank" rel="noreferrer">
-              <Button className="w-full md:w-auto" size="lg">
-                Solicitar Orçamento
-              </Button>
-            </a>
+          <ScrollReveal delay={0.6} width="100%">
+            <div className="flex flex-col gap-4 md:flex-row">
+              {/* Botão de Orçamento */}
+              <a
+                href={getWhatsAppLink()}
+                target="_blank"
+                rel="noreferrer"
+                className="w-full md:w-auto"
+              >
+                <Button size="lg" className="w-full">
+                  Solicitar Orçamento
+                </Button>
+              </a>
 
-            <a href="#portfolio" className="w-full md:w-auto">
-              <Button size="lg" variant="outline" className="w-full">
-                Ver Portfólio
-              </Button>
-            </a>
-          </div>
+              <a href="#portfolio" className="w-full md:w-auto">
+                <Button size="lg" variant="outline" className="w-full">
+                  Ver Portfólio
+                </Button>
+              </a>
+            </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

@@ -8,6 +8,7 @@ import project5 from '../assets/images/project5.png';
 import project6 from '../assets/images/project6.png';
 import Modal from '../components/Modal';
 import PortfolioItem from '../components/PortfolioItem';
+import ScrollReveal from '../components/ScrollReveal';
 
 const Portfolio = () => {
   const PROJECTS = [
@@ -78,25 +79,29 @@ const Portfolio = () => {
   return (
     <section id="portfolio" className="bg-hkn-surface py-20">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
-        <h2 className="mb-12 text-center text-3xl font-semibold text-white md:text-4xl lg:text-5xl">
-          Obras que levam a nossa assinatura
-        </h2>
+        <ScrollReveal width="100%">
+          <h2 className="mb-12 text-center text-4xl font-semibold text-white lg:text-5xl">
+            Obras que levam a nossa assinatura
+          </h2>
+        </ScrollReveal>
 
         <Modal
           project={selectedproject}
           closeModal={() => setSelectedProject(null)}
         />
 
-        <div className="grid grid-cols-1 gap-5 lg:grid-cols-12">
-          {PROJECTS.map((project) => (
-            <PortfolioItem
-              key={project.id}
-              image={project.image}
-              span={project.span}
-              handleClick={() => setSelectedProject(project)}
-            />
-          ))}
-        </div>
+        <ScrollReveal delay={0.2}>
+          <div className="grid grid-cols-1 gap-5 lg:grid-cols-12">
+            {PROJECTS.map((project) => (
+              <PortfolioItem
+                key={project.id}
+                image={project.image}
+                span={project.span}
+                handleClick={() => setSelectedProject(project)}
+              />
+            ))}
+          </div>
+        </ScrollReveal>
       </div>
     </section>
   );

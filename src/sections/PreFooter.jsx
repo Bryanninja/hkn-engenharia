@@ -1,6 +1,7 @@
 import footerImg from '../assets/images/footerImg.png';
 import Button from '../components/Button';
 import Divider from '../components/Divider';
+import ScrollReveal from '../components/ScrollReveal';
 import { getWhatsAppLink } from '../utils/whatsapp';
 
 const PreFooter = () => {
@@ -27,24 +28,30 @@ const PreFooter = () => {
       {/* Conteúdo */}
       <div className="container relative z-10 mx-auto flex h-full flex-col justify-center px-6 md:px-12 lg:px-20">
         <div className="flex flex-col items-center justify-center gap-6 text-center">
-          <h1 className="text-3xl font-semibold leading-tight text-white md:text-4xl lg:text-5xl">
-            Vamos tirar seu <br /> projeto do papel?
-          </h1>
+          <ScrollReveal>
+            <h1 className="text-4xl font-semibold text-white lg:text-5xl lg:leading-[110%]">
+              Vamos tirar seu <br /> projeto do papel?
+            </h1>
+          </ScrollReveal>
 
-          <p className="max-w-md text-center text-sm text-gray-300 md:max-w-lg md:text-lg">
-            Evite dores de cabeça e garanta a melhor engenharia para o seu
-            imóvel. Fale diretamente comigo.
-          </p>
+          <ScrollReveal delay={0.4}>
+            <p className="max-w-sm text-center text-sm text-gray-300 md:max-w-lg md:text-lg">
+              Evite dores de cabeça e garanta a melhor engenharia para o seu
+              imóvel. Fale diretamente comigo.
+            </p>
+          </ScrollReveal>
 
-          <a
-            href={getWhatsAppLink(
-              'Olá! Vim pelo site e gostei bastante, gostaria de um orçamento. Como funciona?.'
-            )}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Button size="lg">Solicitar orçamento do meu sonho!</Button>
-          </a>
+          <ScrollReveal delay={0.6}>
+            <a
+              href={getWhatsAppLink(
+                'Olá! Vim pelo site e gostei bastante, gostaria de um orçamento. Como funciona?.'
+              )}
+              target="_blank"
+              rel="noreferrer"
+            >
+              <Button size="lg">Solicitar orçamento do meu sonho!</Button>
+            </a>
+          </ScrollReveal>
         </div>
       </div>
     </section>
