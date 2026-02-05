@@ -15,13 +15,13 @@ const SolutionSection = () => {
       <div className="flex flex-col items-center justify-items-start gap-14 lg:flex-row xl:gap-44">
         <div>
           <ScrollReveal>
-            <h3 className="mb-2 text-xl font-semibold text-hkn-gold-light md:text-3xl">
+            <h3 className="mb-2 text-pretty text-xl font-semibold text-hkn-gold-light md:text-3xl">
               Soluções completas em Engenharia Civil
             </h3>
           </ScrollReveal>
 
           <ScrollReveal delay={0.2}>
-            <div className="text-7xl sm:text-8xl">
+            <div className="text-6xl sm:text-8xl">
               <h1 className="font-bold text-hkn-black [-webkit-text-stroke:1px_#EBD197] [paint-order:stroke_fill]">
                 Solução
               </h1>
