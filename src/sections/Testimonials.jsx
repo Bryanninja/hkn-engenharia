@@ -11,7 +11,7 @@ const Testimonials = () => {
         <div className="relative space-y-16 md:space-y-20">
           {/* Titulo */}
           <ScrollReveal width="100%">
-            <h1 className="text-center text-6xl font-semibold text-hkn-gold md:text-left md:text-6xl lg:text-7xl">
+            <h1 className="text-center text-5xl font-semibold text-hkn-gold md:text-left md:text-6xl lg:text-7xl">
               Depoimentos
             </h1>
           </ScrollReveal>
