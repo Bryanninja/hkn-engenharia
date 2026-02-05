@@ -80,8 +80,9 @@ const Portfolio = () => {
     <section id="portfolio" className="bg-hkn-surface py-20">
       <div className="container mx-auto px-6 md:px-12 lg:px-20">
         <ScrollReveal width="100%">
-          <h2 className="mb-12 text-center text-4xl font-semibold text-white lg:text-5xl">
-            Obras que levam a nossa assinatura
+          <h2 className="mb-12 text-balance text-center text-4xl font-semibold text-white lg:text-5xl lg:leading-[110%]">
+            Obras que levam a <br className="hidden sm:block" /> nossa
+            assinatura
           </h2>
         </ScrollReveal>
 
