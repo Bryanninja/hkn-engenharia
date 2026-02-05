@@ -44,7 +44,7 @@ const PreFooter = () => {
           <ScrollReveal delay={0.6}>
             <a
               href={getWhatsAppLink(
-                'Olá! Vim pelo site e gostei bastante, gostaria de um orçamento. Como funciona?.'
+                'Olá! Vim pelo site e gostei bastante, gostaria de um orçamento. Como funciona?'
               )}
               target="_blank"
               rel="noreferrer"
