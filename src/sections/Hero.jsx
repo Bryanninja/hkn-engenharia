@@ -1,6 +1,6 @@
 import { IoLocationSharp } from 'react-icons/io5';
 
-import HeroBg from '../assets/images/hero-bg.png';
+import HeroBg from '../assets/images/hero-bg.webp';
 import Badge from '../components/Badge';
 import Button from '../components/Button';
 import Divider from '../components/Divider';
