@@ -6,7 +6,7 @@
 
 <img width="6000" height="4000" alt="mockup (1)" src="https://github.com/user-attachments/assets/05897424-b044-402c-ab25-a8aae97cf675" />
 
-*(Acesse o projeto online: https://www.figma.com/proto/5W5snW5nS94gLV003XkGfi/HKN---Landing-Page?page-id=0%3A1&node-id=85-450&viewport=-2388%2C187%2C0.97&t=WQxeaFOzQXx1epc8-1&scaling=scale-down-width&content-scaling=fixed)*
+*(Acesse o projeto online: https://hkn-engenharia.vercel.app/)*
 
 ## 📄 Sobre o Projeto
 
