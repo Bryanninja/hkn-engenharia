@@ -29,28 +29,29 @@ const PreFooter = () => {
       <div className="container relative z-10 mx-auto flex h-full flex-col justify-center px-6 md:px-12 lg:px-20">
         <div className="flex flex-col items-center justify-center gap-6 text-center">
           <ScrollReveal>
-            <h1 className="text-4xl font-semibold text-white lg:text-5xl lg:leading-[110%]">
-              Vamos tirar seu <br /> projeto do papel?
-            </h1>
+            <h2 className="text-4xl font-semibold text-white lg:text-5xl lg:leading-[110%]">
+              Pronto para construir <br /> do jeito certo?
+            </h2>
           </ScrollReveal>
 
           <ScrollReveal delay={0.4}>
             <p className="max-w-sm text-pretty text-center text-sm text-gray-300 md:max-w-lg md:text-lg">
-              Evite dores de cabeça e garanta a melhor engenharia para o seu
-              imóvel. Fale diretamente comigo.
+              Fale diretamente com o Hyagor e descubra como transformar o seu
+              projeto em realidade — com segurança, prazo e orçamento sob
+              controle.
             </p>
           </ScrollReveal>
 
           <ScrollReveal delay={0.6}>
             <a
               href={getWhatsAppLink(
-                'Olá! Vim pelo site e gostei bastante, gostaria de um orçamento. Como funciona?'
+                'Olá! Vim pelo site e gostaria de conversar sobre meu projeto. Como funciona?'
               )}
               target="_blank"
               rel="noreferrer"
             >
               <Button className="p-4" size="lg">
-                Solicitar orçamento do meu sonho!
+                Solicitar meu orçamento
               </Button>
             </a>
           </ScrollReveal>

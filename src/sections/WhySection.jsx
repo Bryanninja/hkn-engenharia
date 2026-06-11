@@ -1,4 +1,5 @@
 import Card1 from '../assets/images/imageCard1.webp';
+import Card2 from '../assets/images/imageCard2.webp';
 import Card3 from '../assets/images/imageCard3.webp';
 import Card from '../components/Card';
 import ScrollReveal from '../components/ScrollReveal';
@@ -14,17 +15,16 @@ const WhySection = () => {
         </ScrollReveal>
 
         <ScrollReveal delay={0.2} width="100%">
-          <h1 className="mt-4 text-balance text-center text-4xl font-semibold md:text-4xl lg:text-5xl lg:leading-[110%]">
-            Por que investir <br className="md:hidden" /> em um
-            <br className="hidden md:block" /> projeto
-            <br className="md:hidden" /> integrado?
-          </h1>
+          <h2 className="mt-4 text-balance text-center text-4xl font-semibold md:text-4xl lg:text-5xl lg:leading-[110%]">
+            Por que a HKN faz <br className="md:hidden" /> a diferença{' '}
+            <br className="hidden md:block" /> na sua{' '}
+            <br className="md:hidden" /> obra?
+          </h2>
         </ScrollReveal>
       </div>
 
       <div className="pointer-events-none absolute -right-20 top-1/2 z-0 h-[600px] w-[700px] -translate-y-1/2 rounded-full bg-hkn-white/5 blur-[120px] xl:w-[1000px]"></div>
 
-      {/* Ajustei o texto gigante de fundo para não ficar selecionável e atrapalhar o clique */}
       <div className="pointer-events-none absolute left-[50%] top-[20%] z-[1] hidden -translate-x-1/2 bg-gradient-to-r from-[#181818] to-[#1f1f1f] bg-clip-text text-[14rem] font-semibold text-hkn-card/15 opacity-15 lg:flex xl:text-[16rem]">
         Projetos
       </div>
@@ -36,27 +36,16 @@ const WhySection = () => {
             <Card
               className="lg:mt-8"
               title="Economia Real"
-              subtitle="Projetos otimizados evitam desperdício de material. Você compra apenas o necessário."
+              subtitle="Projetos detalhados evitam desperdício de material. Você compra exatamente o que precisa e não paga por nada a mais."
               image={Card1}
             />
           </ScrollReveal>
 
-          {/* O delay do meio deve ser menor para criar a "onda" visual (0.5 é menor que 0.7) - Isso está certo! */}
           <ScrollReveal width="100%" delay={0.5}>
             <Card
-              title="Tecnologia BIM"
-              subtitle="Antecipamos os problemas da obra no computador garantindo zero erros na execução."
-              video={
-                <iframe
-                  className="h-full w-full rounded-md"
-                  src="https://www.youtube.com/embed/cjstltuao9w"
-                  title="Conheça um pouco do meu trabalho!"
-                  frameBorder="0"
-                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                ></iframe>
-              }
+              title="Zero Surpresas"
+              subtitle="Identificamos e resolvemos os problemas antes de chegar na obra. Menos retrabalho, prazo cumprido e orçamento respeitado."
+              image={Card2}
             />
           </ScrollReveal>
 
@@ -64,7 +53,7 @@ const WhySection = () => {
             <Card
               className="lg:mt-8"
               title="Solução Completa"
-              subtitle="Do alvará ao acabamento. Você não precisa contratar 5 profissionais diferentes."
+              subtitle="Do alvará ao acabamento, tudo com um único responsável técnico. Você não precisa gerenciar 5 profissionais diferentes."
               image={Card3}
             />
           </ScrollReveal>

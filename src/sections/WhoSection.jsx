@@ -13,7 +13,8 @@ const WhoSection = () => {
         <div className="relative z-10">
           <ScrollReveal>
             <h2 className="text-balance text-4xl font-semibold text-hkn-white lg:text-5xl lg:leading-[110%]">
-              Quem cuida do seu <br className="hidden sm:block" /> patrimônio
+              O engenheiro que <br className="hidden sm:block" /> cuida do seu
+              sonho
             </h2>
           </ScrollReveal>
           <ScrollReveal delay={0.2}>
@@ -47,10 +48,11 @@ const WhoSection = () => {
             {/* Card Desktop (Invisível no Mobile) */}
             <div className="absolute bottom-10 right-0 z-20 hidden max-w-lg animate-float rounded-2xl border border-hkn-gold/30 bg-hkn-surface/90 p-8 backdrop-blur-md xl:flex xl:flex-col xl:gap-6">
               <p className="text-pretty text-lg leading-relaxed text-gray-300">
-                Por trás da HKN, existe o compromisso técnico de quem entende
-                que uma obra não aceita erros. Especialista em compatibilização
-                de projetos e BIM, meu papel é garantir que a execução siga
-                rigorosamente o planejado.
+                Meu nome é Hyagor Kevelhen. Sou Engenheiro Civil com anos de
+                experiência em obras residenciais e projetos de alta
+                complexidade. Sei que construir é um dos maiores investimentos
+                da sua vida — e me comprometo pessoalmente com cada detalhe para
+                que tudo saia como você planejou, sem surpresas e sem estresse.
               </p>
               <div>
                 <a
@@ -76,10 +78,11 @@ const WhoSection = () => {
         <ScrollReveal delay={0.2}>
           <div className="flex flex-col gap-6 rounded-2xl bg-transparent py-10 xl:hidden">
             <p className="text-pretty text-base leading-relaxed text-gray-300">
-              Por trás da HKN, existe o compromisso técnico de quem entende que
-              uma obra não aceita erros. Especialista em compatibilização de
-              projetos e BIM, meu papel é garantir que a execução siga
-              rigorosamente o planejado.
+              Meu nome é Hyagor Kevelhen. Sou Engenheiro Civil com experiência
+              em obras residenciais e projetos de alta complexidade. Sei que
+              construir é um dos maiores investimentos da sua vida — e me
+              comprometo pessoalmente com cada detalhe para que tudo saia como
+              você planejou, sem surpresas e sem estresse.
             </p>
             <Button className="w-full">Falar com Engenheiro</Button>
           </div>

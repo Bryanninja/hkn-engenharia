@@ -41,23 +41,23 @@ const SolutionSection = () => {
       <ScrollReveal width="100%" delay={0.4}>
         <div className="grid grid-cols-1 gap-4 lg:grid-cols-2 lg:gap-5">
           <CardSolution
-            title="Projetos Estruturais & BIM"
-            subtitle="Concreto Armado, Estrutura Metálica, Elétrico, Hidrossanitário e Climatização (HVAC). Tudo integrado em 3D."
+            title="Projeto Estrutural Completo"
+            subtitle="Estrutura de concreto, metálica, elétrico, hidrossanitário e climatização — tudo integrado e compatibilizado para evitar conflitos na hora da execução."
             icon={IconStructue}
           />
           <CardSolution
-            title="Legalização & Burocracia"
-            subtitle="Projetos para Prefeitura, Liberação de Alvará de Construção e Regularização de Imóveis.."
+            title="Legalização sem Burocracia"
+            subtitle="Nós cuidamos de tudo junto à prefeitura: alvarás, regularizações e documentação. Você foca na sua obra, a gente cuida do papel."
             icon={IconFolder}
           />
           <CardSolution
-            title="Tecnologias Especiais"
-            subtitle="Projetos de Cabeamento Estruturado, Telecomunicações, CFTV (Monitoramento), Luminotécnico e Piscinas."
+            title="Automação e Tecnologias Especiais"
+            subtitle="Cabeamento estruturado, câmeras (CFTV), telecomunicações, projeto luminotécnico e piscinas. Sua casa com o padrão que você merece."
             icon={IconTech}
           />
           <CardSolution
-            title="Consultoria de Obras"
-            subtitle="Acompanhamento técnico, visitas periódicas, laudos e vistorias para garantir a qualidade da execução."
+            title="Consultoria e Acompanhamento de Obra"
+            subtitle="Visitas técnicas periódicas, laudos e fiscalização para garantir que a execução siga rigorosamente o projeto. Você tem um engenheiro do seu lado."
             icon={IconEngineer}
           />
         </div>
