@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 import Footer from '../sections/Footer';
 
@@ -7,7 +7,7 @@ const PrivacyPolicy = () => {
     <div className="min-h-screen bg-hkn-black font-sans text-gray-300 selection:bg-hkn-gold selection:text-black">
       {/* Botão de Voltar Simples (Para não complicar com o Menu cheio de links âncora) */}
       <div className="container mx-auto px-6 py-6">
-        <Link to="/" className="text-hkn-gold hover:underline">
+        <Link href="/" className="text-hkn-gold hover:underline">
           &larr; Voltar para o início
         </Link>
       </div>

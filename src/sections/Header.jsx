@@ -1,7 +1,9 @@
+'use client';
+
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { IoCloseOutline } from 'react-icons/io5';
 import { RxHamburgerMenu } from 'react-icons/rx';
-import { Link } from 'react-router-dom';
 
 import Logo from '../assets/icons/LogoSvg.svg';
 import Button from '../components/Button';
@@ -41,10 +43,10 @@ const Header = () => {
     <header
       className={`fixed left-0 top-0 z-50 flex w-full items-center justify-between px-6 py-4 transition-all duration-500 md:px-10 ${isScrolled ? 'bg-hkn-black/90 py-3 shadow-lg backdrop-blur-md' : 'bg-transparent py-6'} `}
     >
-      <Link to="/">
+      <Link href="/">
         <img
           className="md:12 z-50 h-10 w-auto md:h-12"
-          src={Logo}
+          src={Logo.src || Logo}
           alt="Logo HKN-Projetos de Engenharia"
         />
       </Link>

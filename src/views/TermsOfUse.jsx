@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import Link from 'next/link';
 
 import Footer from '../sections/Footer';
 
@@ -8,7 +8,7 @@ const TermsOfUse = () => {
       {/* Botão de Voltar */}
       <div className="container mx-auto px-6 py-6">
         <Link
-          to="/"
+          href="/"
           className="flex items-center gap-2 text-hkn-gold hover:underline"
         >
           &larr; Voltar para o início

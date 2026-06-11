@@ -1,4 +1,4 @@
-import Person from '../assets/images/hyagor-big.png';
+import Person from '../assets/images/hyagor-big.webp';
 import LogoBackground from '../assets/images/LogoBackground.svg';
 import Button from '../components/Button';
 import Divider from '../components/Divider';
@@ -32,7 +32,7 @@ const WhoSection = () => {
 
             <img
               className="absolute top-auto z-0 scale-100 opacity-80"
-              src={LogoBackground}
+              src={LogoBackground.src || LogoBackground}
               alt="background Logo"
             />
 
@@ -40,7 +40,7 @@ const WhoSection = () => {
 
             <img
               className="relative z-10 w-full max-w-[500px] object-cover xl:max-w-[600px]"
-              src={Person}
+              src={Person.src || Person}
               alt="Foto Hyagor Engenheiro Civil"
             />
 

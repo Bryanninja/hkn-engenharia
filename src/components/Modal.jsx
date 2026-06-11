@@ -1,3 +1,5 @@
+'use client';
+
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
@@ -43,7 +45,7 @@ const Modal = ({ project, closeModal }) => {
               <SwiperSlide key={index}>
                 <img
                   className="h-full w-full object-cover"
-                  src={imgSrc}
+                  src={imgSrc.src || imgSrc}
                   alt={`${project.title} - Foto ${index + 1}`}
                 />
               </SwiperSlide>

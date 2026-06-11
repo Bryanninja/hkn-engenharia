@@ -14,7 +14,7 @@ const Hero = () => {
       <div className="absolute inset-0 h-full w-full">
         <img
           className="h-full w-full object-cover object-center"
-          src={HeroBg}
+          src={HeroBg.src || HeroBg}
           alt="Engenheiro em obra residencial de alto padrão"
         />
       </div>

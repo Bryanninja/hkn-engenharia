@@ -22,7 +22,7 @@ const CardSolution = ({ icon, title, subtitle }) => {
         {/* Ícone */}
         <img
           className="h-32 w-32 object-contain transition-transform duration-500 group-hover:scale-110"
-          src={icon}
+          src={icon.src || icon}
           alt="ícone ilustrativo"
         />
 

@@ -9,7 +9,7 @@ const TestimonialItem = ({ image, name, role, quote, isReversed = false }) => {
       <div className="w-full md:w-2/5 lg:w-1/4">
         <div className="relative aspect-[4/5] overflow-hidden rounded-2xl bg-hkn-surface">
           <img
-            src={image}
+            src={image.src || image}
             alt={`Foto de ${name}`}
             className="h-full w-full object-cover saturate-0 transition-all duration-500 group-hover:scale-105 group-hover:saturate-100"
           />

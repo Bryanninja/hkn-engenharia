@@ -1,5 +1,5 @@
-import Card1 from '../assets/images/imageCard1.png';
-import Card3 from '../assets/images/imageCard3.png';
+import Card1 from '../assets/images/imageCard1.webp';
+import Card3 from '../assets/images/imageCard3.webp';
 import Card from '../components/Card';
 import ScrollReveal from '../components/ScrollReveal';
 

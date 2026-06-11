@@ -1,6 +1,6 @@
 import Ilustration from '../assets/icons/Icons.svg';
-import Customer1 from '../assets/images/Customer1.png';
-import Customer2 from '../assets/images/Customer2.png';
+import Customer1 from '../assets/images/Customer1.webp';
+import Customer2 from '../assets/images/Customer2.webp';
 import ScrollReveal from '../components/ScrollReveal';
 import TestimonialItem from '../components/TestimonialItem';
 
@@ -20,7 +20,7 @@ const Testimonials = () => {
           <div className="absolute right-0 top-0 -z-10">
             <img
               className="hidden h-full w-40 animate-float opacity-35 blur-[0.6px] xl:flex"
-              src={Ilustration}
+              src={Ilustration.src || Ilustration}
               alt="Ilustração de Casa e blocos de modo abstrato"
             />
           </div>

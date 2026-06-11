@@ -33,7 +33,7 @@ const Partners = () => {
                 className="group relative flex h-20 w-full items-center justify-center transition-all duration-300"
               >
                 <img
-                  src={partner.logo}
+                  src={partner.logo.src || partner.logo}
                   alt={`Logo ${partner.name}`}
                   className="max-h-10 w-auto object-contain opacity-30 grayscale transition-all duration-500 group-hover:scale-110 group-hover:opacity-100 group-hover:grayscale-0 md:max-h-12"
                 />

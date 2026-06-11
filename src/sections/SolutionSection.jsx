@@ -33,7 +33,7 @@ const SolutionSection = () => {
         </div>
         <img
           className="mt-20 hidden h-full w-40 animate-float opacity-35 blur-[0.6px] lg:flex xl:mt-0 xl:w-60"
-          src={Ilustration}
+          src={Ilustration.src || Ilustration}
           alt="Ilustração de Casa e blocos de modo abstrato"
         />
       </div>

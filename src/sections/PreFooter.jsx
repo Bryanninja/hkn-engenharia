@@ -1,4 +1,4 @@
-import footerImg from '../assets/images/footerImg.png';
+import footerImg from '../assets/images/footerImg.webp';
 import Button from '../components/Button';
 import Divider from '../components/Divider';
 import ScrollReveal from '../components/ScrollReveal';
@@ -13,7 +13,7 @@ const PreFooter = () => {
       {/* Imagem de Fundo */}
       <div className="absolute inset-0 h-full w-full">
         <img
-          src={footerImg}
+          src={footerImg.src || footerImg}
           alt="Imagem da fachada de um imóvel"
           className="h-full w-full object-cover object-center"
         />
