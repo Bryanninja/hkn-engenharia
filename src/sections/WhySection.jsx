@@ -16,9 +16,7 @@ const WhySection = () => {
 
         <ScrollReveal delay={0.2} width="100%">
           <h2 className="mt-4 text-balance text-center text-4xl font-semibold md:text-4xl lg:text-5xl lg:leading-[110%]">
-            Por que a HKN faz <br className="md:hidden" /> a diferença{' '}
-            <br className="hidden md:block" /> na sua{' '}
-            <br className="md:hidden" /> obra?
+            O que faz a HKN <br /> ser diferente?
           </h2>
         </ScrollReveal>
       </div>

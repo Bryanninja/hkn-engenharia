@@ -48,18 +48,15 @@ const Hero = () => {
 
           <ScrollReveal delay={0.2}>
             <h1 className="text-balance text-4xl font-semibold text-hkn-white lg:text-5xl lg:leading-[110%]">
-              A casa dos seus sonhos,
-              <br />
-              construída do jeito <br />
-              certo. Na primeira vez.
+              Sua obra entregue <br />
+              no prazo, no orçamento <br />e sem dor de cabeça.
             </h1>
           </ScrollReveal>
 
           <ScrollReveal delay={0.4}>
             <p className="max-w-lg text-pretty text-base text-gray-300 md:text-lg">
-              Do projeto completo à entrega das chaves — sem surpresas no
-              orçamento, sem retrabalho na obra e sem dores de cabeça para você.
-              Engenharia civil com a atenção que o seu investimento merece.
+              Projetos de engenharia civil completos — do alvará à entrega das
+              chaves. Com o Hyagor Kevelhen cuidando de cada detalhe por você.
             </p>
           </ScrollReveal>
 

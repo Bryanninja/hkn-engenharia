@@ -1,12 +1,12 @@
 'use client';
 
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 
 import ScrollReveal from '../components/ScrollReveal';
 
 const VideoSection = () => {
-  const iframeRef = useRef(null);
   const sectionRef = useRef(null);
+  const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
     const section = sectionRef.current;
@@ -14,17 +14,12 @@ const VideoSection = () => {
 
     const observer = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting && iframeRef.current) {
-          // Autoplay muted quando entra na tela
-          iframeRef.current.src =
-            'https://www.youtube.com/embed/cjstltuao9w?autoplay=1&mute=1&controls=1&rel=0&modestbranding=1';
-        } else if (!entry.isIntersecting && iframeRef.current) {
-          // Pausa substituindo o src sem autoplay
-          iframeRef.current.src =
-            'https://www.youtube.com/embed/cjstltuao9w?rel=0&modestbranding=1';
+        if (entry.isIntersecting) {
+          setIsVisible(true);
+          observer.disconnect(); // Carrega uma vez, não precisa mais observar
         }
       },
-      { threshold: 0.5 }
+      { threshold: 0.3 }
     );
 
     observer.observe(section);
@@ -71,15 +66,21 @@ const VideoSection = () => {
 
             {/* Aspect ratio 16:9 */}
             <div className="aspect-video w-full bg-hkn-black">
-              <iframe
-                ref={iframeRef}
-                className="h-full w-full"
-                src="https://www.youtube.com/embed/cjstltuao9w?rel=0&modestbranding=1"
-                title="Conheça o trabalho da HKN Engenharia"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerPolicy="strict-origin-when-cross-origin"
-                allowFullScreen
-              ></iframe>
+              {isVisible ? (
+                <iframe
+                  className="h-full w-full"
+                  src="https://www.youtube.com/embed/cjstltuao9w?rel=0&modestbranding=1"
+                  title="Conheça o trabalho da HKN Engenharia"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                ></iframe>
+              ) : (
+                // Placeholder enquanto não entrou na tela (evita requisição desnecessária)
+                <div className="flex h-full w-full items-center justify-center bg-hkn-black">
+                  <div className="h-8 w-8 animate-spin rounded-full border-2 border-hkn-gold/30 border-t-hkn-gold"></div>
+                </div>
+              )}
             </div>
           </div>
         </ScrollReveal>
