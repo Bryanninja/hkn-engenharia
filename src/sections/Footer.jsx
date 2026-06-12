@@ -16,6 +16,10 @@ const Footer = () => {
                 src={Logo.src || Logo}
                 alt="Logo HKN"
                 className="w-32 md:w-auto"
+                width="128"
+                height="48"
+                loading="lazy"
+                decoding="async"
               />
             </Link>
 

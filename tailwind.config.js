@@ -32,7 +32,7 @@ export default {
           'linear-gradient(135deg, #EBD197 0%, #C6A355 50%, #8E702D 100%)',
       },
       fontFamily: {
-        sans: ['Montserrat', 'sans-serif'], // Podemos definir uma fonte melhor depois
+        sans: ['var(--font-montserrat)', 'sans-serif'],
       },
 
       keyframes: {

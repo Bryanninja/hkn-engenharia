@@ -1,4 +1,12 @@
+import { Montserrat } from 'next/font/google';
 import './globals.css';
+
+const montserrat = Montserrat({
+  subsets: ['latin'],
+  weight: ['300', '400', '500', '600', '700'],
+  display: 'swap',
+  variable: '--font-montserrat',
+});
 
 const baseUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
@@ -43,7 +51,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="pt-BR">
-      <body className="overflow-x-hidden bg-hkn-black font-sans text-white antialiased">
+      <body
+        className={`overflow-x-hidden bg-hkn-black font-sans text-white antialiased ${montserrat.variable}`}
+      >
         {children}
       </body>
     </html>

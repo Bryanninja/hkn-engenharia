@@ -48,6 +48,8 @@ const Header = () => {
           className="md:12 z-50 h-10 w-auto md:h-12"
           src={Logo.src || Logo}
           alt="Logo HKN-Projetos de Engenharia"
+          width="128"
+          height="48"
         />
       </Link>
 
