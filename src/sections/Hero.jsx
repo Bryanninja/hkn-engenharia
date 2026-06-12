@@ -47,13 +47,13 @@ const Hero = () => {
             </Badge>
           </ScrollReveal>
 
-          {/* H1 E P SEM SCROLLREVEAL PARA MELHORAR O LCP (FIRST PAINT) */}
-          <h1 className="text-balance text-4xl font-semibold text-hkn-white lg:text-5xl lg:leading-[110%]">
+          {/* H1 E P COM ANIMAÇÃO 100% CSS (Zero Javascript) PARA NÃO PREJUDICAR O LCP */}
+          <h1 className="animate-fadeInUp text-balance text-4xl font-semibold text-hkn-white opacity-0 lg:text-5xl lg:leading-[110%]">
             Sua obra entregue <br />
             no prazo, no orçamento <br />e sem dor de cabeça.
           </h1>
 
-          <p className="max-w-lg text-pretty text-base text-gray-300 md:text-lg">
+          <p className="max-w-lg animate-fadeInUpDelayed text-pretty text-base text-gray-300 opacity-0 md:text-lg">
             Projetos de engenharia civil completos — do alvará à entrega das
             chaves. Com o Hyagor Kevelhen cuidando de cada detalhe por você.
           </p>
