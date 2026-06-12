@@ -68,6 +68,10 @@ const VideoSection = () => {
                     src={`https://img.youtube.com/vi/${VIDEO_ID}/maxresdefault.jpg`}
                     alt="Thumbnail do vídeo HKN Engenharia"
                     className="h-full w-full object-cover transition-transform duration-700 group-hover:scale-105"
+                    width="1280"
+                    height="720"
+                    loading="lazy"
+                    decoding="async"
                   />
 
                   {/* Overlay escuro suave */}

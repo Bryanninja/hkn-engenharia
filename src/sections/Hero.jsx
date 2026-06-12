@@ -16,6 +16,7 @@ const Hero = () => {
           className="h-full w-full object-cover object-center"
           src={HeroBg.src || HeroBg}
           alt="Engenheiro em obra residencial de alto padrão"
+          fetchPriority="high"
         />
       </div>
 
@@ -46,21 +47,18 @@ const Hero = () => {
             </Badge>
           </ScrollReveal>
 
-          <ScrollReveal delay={0.2}>
-            <h1 className="text-balance text-4xl font-semibold text-hkn-white lg:text-5xl lg:leading-[110%]">
-              Sua obra entregue <br />
-              no prazo, no orçamento <br />e sem dor de cabeça.
-            </h1>
-          </ScrollReveal>
+          {/* H1 E P SEM SCROLLREVEAL PARA MELHORAR O LCP (FIRST PAINT) */}
+          <h1 className="text-balance text-4xl font-semibold text-hkn-white lg:text-5xl lg:leading-[110%]">
+            Sua obra entregue <br />
+            no prazo, no orçamento <br />e sem dor de cabeça.
+          </h1>
 
-          <ScrollReveal delay={0.4}>
-            <p className="max-w-lg text-pretty text-base text-gray-300 md:text-lg">
-              Projetos de engenharia civil completos — do alvará à entrega das
-              chaves. Com o Hyagor Kevelhen cuidando de cada detalhe por você.
-            </p>
-          </ScrollReveal>
+          <p className="max-w-lg text-pretty text-base text-gray-300 md:text-lg">
+            Projetos de engenharia civil completos — do alvará à entrega das
+            chaves. Com o Hyagor Kevelhen cuidando de cada detalhe por você.
+          </p>
 
-          <ScrollReveal delay={0.6} width="100%">
+          <ScrollReveal delay={0.2} width="100%">
             <div className="flex flex-col gap-4 md:flex-row">
               {/* Botão de Orçamento */}
               <a

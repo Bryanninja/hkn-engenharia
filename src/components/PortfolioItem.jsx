@@ -18,6 +18,10 @@ const PortfolioItem = ({ image, span, handleClick }) => {
         className="h-full w-full object-cover transition-all duration-700 group-hover:scale-110 group-hover:blur-sm group-hover:brightness-50"
         src={image.src || image}
         alt="Projeto HKN"
+        width="600"
+        height="400"
+        loading="lazy"
+        decoding="async"
       />
     </div>
   );

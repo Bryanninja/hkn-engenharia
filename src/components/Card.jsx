@@ -43,6 +43,10 @@ const Card = ({ title, subtitle, image, video, className }) => {
               src={image.src || image}
               alt={title}
               className="w-full object-contain transition-transform duration-700 group-hover:scale-105"
+              width="464"
+              height="320"
+              loading="lazy"
+              decoding="async"
             />
           )}
         </div>

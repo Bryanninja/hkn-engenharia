@@ -43,6 +43,10 @@ const WhoSection = () => {
               className="relative z-10 w-full max-w-[500px] object-cover xl:max-w-[600px]"
               src={Person.src || Person}
               alt="Foto Hyagor Engenheiro Civil"
+              width="500"
+              height="700"
+              loading="lazy"
+              decoding="async"
             />
 
             {/* Card Desktop (Invisível no Mobile) */}

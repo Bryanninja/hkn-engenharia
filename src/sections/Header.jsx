@@ -73,6 +73,7 @@ const Header = () => {
       {/* BOTÃO MENU MOBILE */}
       <button
         onClick={handleToggle}
+        aria-label="Abrir menu de navegação"
         className="relative z-50 flex text-3xl text-hkn-gold-light lg:hidden"
       >
         {isOpen ? <IoCloseOutline /> : <RxHamburgerMenu />}

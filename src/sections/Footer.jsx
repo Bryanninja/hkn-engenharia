@@ -53,9 +53,10 @@ const Footer = () => {
                 href="https://www.instagram.com/hkn.projetos/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Instagram HKN Projetos"
                 className="flex items-center gap-2 text-hkn-muted transition-colors duration-300 hover:text-hkn-gold"
               >
-                <FaInstagram className="text-xl" />
+                <FaInstagram className="text-xl" aria-hidden="true" />
                 <span className="hidden md:inline">hkn.projetos</span>
               </a>
 
@@ -64,9 +65,10 @@ const Footer = () => {
                 href="https://www.instagram.com/hyagorkevelhen/"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Instagram Hyagor Kevelhen"
                 className="flex items-center gap-2 text-hkn-muted transition-colors duration-300 hover:text-hkn-gold"
               >
-                <FaInstagram className="text-xl" />
+                <FaInstagram className="text-xl" aria-hidden="true" />
                 <span className="hidden md:inline">hyagorkevelhen</span>
               </a>
 
@@ -75,9 +77,10 @@ const Footer = () => {
                 href="https://www.youtube.com/@EngenheiroHyagorKevelhen"
                 target="_blank"
                 rel="noreferrer"
+                aria-label="Canal do Youtube Hyagor Kevelhen"
                 className="flex items-center gap-2 text-hkn-muted transition-colors duration-300 hover:text-hkn-gold"
               >
-                <RiYoutubeLine className="text-xl" />
+                <RiYoutubeLine className="text-xl" aria-hidden="true" />
                 <span className="hidden md:inline">Canal Youtube</span>
               </a>
             </div>
